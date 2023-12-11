@@ -139,6 +139,7 @@
                         <button class="btn btn-success" type="button" id="btnResumen" onclick="location.href='../index.html'">Confirmar / Imprimir cupón</button>
                         <!-- <button class="btn btn-success" type="submit" id="btnResumen">Resumen</button> -->
                     </div>
+                    
                 </div>
                 <br>
                 <br>
