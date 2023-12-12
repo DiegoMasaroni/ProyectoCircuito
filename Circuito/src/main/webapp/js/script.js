@@ -37,6 +37,6 @@ console.log(capCategoria.chart(0))
   
 }
 
-const COSTO = document.getElementById('btnCosto');
+//const COSTO = document.getElementById('btnCosto');
 
-COSTO.addEventListener('click', valorEntrada);
+//COSTO.addEventListener('click', valorEntrada);

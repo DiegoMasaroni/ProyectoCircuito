@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@page import="circuito.calculos"%>
 <!doctype html>
 <html lang="en">
 
@@ -119,11 +120,19 @@
                 </div>
                 <br>
                 <div class="d-grid col-3 mb-2 mx-auto">
-                       <button class="btn btn-success" type="button" id="btnCosto">Calcular Costo</button>
-                    </div>
+                       <button class="btn btn-success" type="button" id="btnCosto" onclick="location.href='CalcularCosto.jsp'">Calcular Costo</button>
+                </div>
+<%
+int x =Integer.parseInt(request.getParameter("cantidad"));
+char z =request.getParameter("categoria").charAt(0);
+
+calculos calcular = new calculos();
+double resultado = calcular.calcular(x,z);
+String totalapagar = Double.toString(resultado);
+%>
                 <div class="alert alert-primary mb-0" role="alert">
 						
-                   Total a pagar: <span id="total" class="text-danger">totalapagar</span>	-->	
+                   Total a pagar: <span id="total" class="text-danger" ><%=totalapagar%></span>	
                  </div>  
                 <br>
                 <div class="row">

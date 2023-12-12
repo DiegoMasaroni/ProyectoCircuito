@@ -23,27 +23,4 @@ public class calculos {
         return (double) cant;
     }
 
-
-
-
-/*var capCantidad = document.getElementById('cantidad').value;
-    var capCategoria = document.getElementById('estadia').value;
-
-    const TICKET = 3500;
-    var resumenTotal = 0;
-
-    switch (capCategoria) {
-        case "0":
-            resumenTotal = capCantidad * TICKET * 0.5;
-            break;
-        case "1":
-            resumenTotal = capCantidad * TICKET;
-            break;
-        case "2":
-            resumenTotal = capCantidad * TICKET * 2 * 0.8;
-            break;
-    }
-
-
-    document.getElementById('total').innerText = resumenTotal;*/
 } 
