@@ -26,6 +26,7 @@ char z =request.getParameter("categoria").charAt(0);
 calculos calcular = new calculos();
 double resultado = calcular.calcular(x,z);
 String totalapagar = Double.toString(resultado);
+out.println(totalapagar);
 
 //CAMPO ACTIVO es por defecto 1=activo (0 inactivo)
 

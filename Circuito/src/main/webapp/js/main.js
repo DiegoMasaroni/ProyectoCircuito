@@ -1,47 +1,3 @@
-function valorEntrada() {
-	
-	
-//    <span id="miSpan">Este es un span</span>
-
-   
-        // Obtener el elemento <span> por su ID
-//        var miSpan = document.getElementById("miSpan");
-
-        // Verificar si el elemento existe antes de intentar modificarlo
-//        if (miSpan) {
-            // Cambiar el contenido del <span> utilizando innerText
- //           miSpan.innerText = "Nuevo valor para el span";
-	
-	
-	
-	
-
-    var capCantidad = document.getElementById('cantidad').value;
-    var capCategoria = document.getElementById('estadia').value;
-out.println(document.getElementById('estadia').value);
-    const TICKET = 3500;
-    var resumenTotal = 0;
-console.log(capCategoria.chart(0))
-
-    switch (capCategoria.chart(0)) {
-        case '1':
-            resumenTotal = capCantidad * TICKET * 0.5;
-            break;
-        case '2':
-            resumenTotal = capCantidad * TICKET;
-            break;
-        case '3':
-            resumenTotal = capCantidad * TICKET * 2 * 0.8;
-            break;
-    }
-
-  var miSpan = document.getElementById("total");
-  miSpan.innerText =1000;//resumenTotal;
-  //  document.getElementById('total').value = resumenTotal;
-  
-}
-
-
 function controlForm() {
 
     //CONTROLO NOMBRE
@@ -114,8 +70,6 @@ BTNCLICK.addEventListener('click', controlForm);
 
 
 
-const COSTO = document.getElementById('btnCosto');
 
-COSTO.addEventListener('click', valorEntrada);
 
 

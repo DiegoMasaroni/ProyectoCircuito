@@ -118,15 +118,15 @@
                     </div>
                 </div>
                 <br>
+                <div class="d-grid col-3 mb-2 mx-auto">
+                       <button class="btn btn-success" type="button" id="btnCosto">Calcular Costo</button>
+                    </div>
                 <div class="alert alert-primary mb-0" role="alert">
 						
-                   Total a pagar: <span id="total" data-value="<%=request.getParameter("total") %>" class="text-danger"></span>	-->	
+                   Total a pagar: <span id="total" class="text-danger"></span>	-->	
                  </div>  
                 <br>
                 <div class="row">
-                     <div class="d-grid col-3 mx-auto">
-                       <button class="btn btn-success" type="button" id="btnCosto">Calcular Costo</button>
-                    </div>
                     <div class="d-grid col-3 mx-auto">
                        <button class="btn btn-success" type="button" id="btnDelete">Cancelar Compra</button>
                     </div>

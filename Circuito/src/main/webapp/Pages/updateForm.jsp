@@ -24,6 +24,7 @@ calculos calcular = new calculos();
 double resultado = calcular.calcular(x,z);
 String totalapagar = Double.toString(resultado);
 
+
 conexion c = new conexion();
 Connection cn = c.conectar();
 
