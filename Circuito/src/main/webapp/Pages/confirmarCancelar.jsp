@@ -123,7 +123,7 @@
                     </div>
                 <div class="alert alert-primary mb-0" role="alert">
 						
-                   Total a pagar: <span id="total" class="text-danger"></span>	-->	
+                   Total a pagar: <span id="total" class="text-danger">totalapagar</span>	-->	
                  </div>  
                 <br>
                 <div class="row">
