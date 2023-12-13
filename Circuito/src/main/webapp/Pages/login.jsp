@@ -11,13 +11,28 @@
 <body>
 
 <%
-//Connection cn= conexion.conectar();
+
+String usuarioIngresado = request.getParameter("usuario");
+String contrasenaIngresada = request.getParameter("contrasena");
+
 conexion c = new conexion();
 Connection cn = c.conectar();
 
-PreparedStatement ps;
-ps = cn.prepareStatement("select * from cupones where activo ='1'");
-ResultSet rs =ps.executeQuery();
+try{
+	
+Statement stm = cn.createStatement();
+ResultSet tablaResultado= stm.executeQuery("SELECT usuario, contraseña FROM usuarios");   
+while(tablaResultado.next()){
+	 if (usuarioIngresado== tablaResultado.getString(1) && contrasenaIngresada == tablaResultado.getString(2)){
+		 <%@ include file="estadia.html" %>
+		 
+	 }
+
+ }
+} catch(Exception e){
+ e.printStackTrace();
+}
+
 %>
 
 
