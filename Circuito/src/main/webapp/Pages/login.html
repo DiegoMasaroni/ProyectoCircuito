@@ -5,12 +5,12 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="./Assets/Img/motocross.png" itemprop="image">
+  <link rel="shortcut icon" href="../Assets/Img/motocross.png" itemprop="image">
   <title> Circuito La Cañada</title>
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="./CSS/Misestilos.css">
+  <link rel="stylesheet" href="../CSS/Misestilos.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Quicksand&family=Roboto&display=swap');
   </style>
@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-lg bg-secondary">
       <div class="container ">
         <a href="Index.html">
-          <img src="./Assets/Img/motocross.png" width="40" height="40" alt="Icono de Motocross">
+          <img src="../Assets/Img/motocross.png" width="40" height="40" alt="Icono de Motocross">
         </a>
         <a class="navbar-brand" href="Index.html"> Circuito La Cañada</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -31,14 +31,14 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a href="https://www.facebook.com/groups/140119366109551" target="_blank">
-              <img src="./Assets/Img/fb.png" width="40" height="40" alt="Facebook">
+              <img src="../Assets/Img/fb.png" width="40" height="40" alt="Facebook">
             </a>
             <a class="nav-link active" aria-current="page" href="#imagenes">Imagenes</a>
             <a class="nav-link active" aria-current="page" href="#servicios">Servicios</a>
             <a class="nav-link active" aria-current="page" href="#instructores">Instructores</a>
             <a class="nav-link active" aria-current="page" href="#escuela">Escuela</a>
             <a class="nav-link active" aria-current="page" href="#auspiciantes">Auspiciantes</a>
-            <a class="btn btn-success" href="./Pages/login.html">Login</a>
+            <!--<a class="btn btn-success" href="./Pages/login.html">Login</a>-->
           </div>
         </div>
       </div>
@@ -47,27 +47,25 @@
 
 
   <main>
-    <div class="container-fluid">
-      <div class="row justify-content-left align-items-center g-2">
-        <div class="col-5 position-absolute top-50 start-20 translate-middle-y">
-          <div class="letralacañada">LA CAÑADA</div>
-          <h1>Divertite con Nosotros</h1>
-          <p>La Cañada es un circuito de enduro/motocros ubicado en San Andrés de Giles
-            a 100 kms de la capital federal, contamos con todo tipo de servicios desde bar hasta
-            instructores de manejo; con circuitos para principiantes; trial; enduro soft/hard y profesional.
-          </p>
-          <p>
-            Los precios son accesibles y la jornada inolvidable.
-          </p>
+<div class="container mt-5">
+        <div class="col-md-6 offset-md-3">
+            <h2 class="mb-4">Iniciar Sesión</h2>
+            <form action="/tu_script_de_autenticacion" method="post">
 
-          <a href="https://www.google.com/maps/dir/-34.4368464,-59.4460016/-34.451917,-59.4730543/@-34.4519045,-59.4729023,664m/data=!3m1!1e3!4m5!4m4!1m1!4e1!1m0!3e0!5m1!1e4?entry=ttu"
-            target="_blank">
-            <div class="d-grid gap-2  mx-auto">
-              <button class="btn btn-success width " type="button">Cómo llegar</button>
-            </div>
-          </a>
+                <div class="form-group">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" class="form-control" id="usuario" name="usuario" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+
+            </form>
         </div>
-      </div>
     </div>
   </main>
 
@@ -80,7 +78,7 @@
     <div class="row row_mia row-cols-1 row-cols-md-3 g-4 justify-content-center mr-0">
       <div class="col">
         <div class="card h-100">
-          <img src="./Assets/Img/Instuctores/Travis_Pastrana.JPG" class="card-img-top" alt="PASTRANA">
+          <img src="../Assets/Img/Instuctores/Travis_Pastrana.JPG" class="card-img-top" alt="PASTRANA">
           <div class="card-body">
             <h5 class="card-title">Travis Pastrana</h5>
 
@@ -96,7 +94,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="./Assets/Img/Instuctores/Ken_Block.jpg" class="card-img-top " alt="kEN bLOCK">
+          <img src="../Assets/Img/Instuctores/Ken_Block.jpg" class="card-img-top " alt="kEN bLOCK">
           <div class="card-body">
             <h5 class="card-title">Ken Block</h5>
             <p class="card-text">
@@ -112,7 +110,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="./Assets/Img/Instuctores/Marc_Márquez.jpg" class="card-img-top" alt="MARC MARQUEZ">
+          <img src="../Assets/Img/Instuctores/Marc_Márquez.jpg" class="card-img-top" alt="MARC MARQUEZ">
           <div class="card-body">
             <h5 class="card-title">Marc Marquez</h5>
             <p class="card-text">
@@ -150,19 +148,19 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./Assets/Img/motos/moto1.jpg" class="d-block vh-100 w-100" alt="...">
+            <img src="../Assets/Img/motos/moto1.jpg" class="d-block vh-100 w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./Assets/Img/motos/moto2.jpg" class="d-block vh-100 w-100" alt="...">
+            <img src="../Assets/Img/motos/moto2.jpg" class="d-block vh-100 w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./Assets/Img/motos/moto3.jpg" class="d-block vh-100 w-100" alt="...">
+            <img src="../Assets/Img/motos/moto3.jpg" class="d-block vh-100 w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./Assets/Img/motos/moto4.jpg" class="d-block vh-100 w-100" alt="...">
+            <img src="../Assets/Img/motos/moto4.jpg" class="d-block vh-100 w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="./Assets/Img/motos/moto5.jpg" class="d-block vh-100 w-100" alt="...">
+            <img src="../Assets/Img/motos/moto5.jpg" class="d-block vh-100 w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -188,43 +186,43 @@
     <div class="container text-center">
       <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
         <div class="col">
-          <img src="./Assets/Img/Servicios/agua.png" class="ImgTamaño" alt="Agua">
+          <img src="../Assets/Img/Servicios/agua.png" class="ImgTamaño" alt="Agua">
           <div class="p-3">Agua</div>
         </div>
         <div class="col">
-          <img src="./Assets/Img/Servicios/alumbrado.png" class="ImgTamaño" alt="Alumbrado">
+          <img src="../Assets/Img/Servicios/alumbrado.png" class="ImgTamaño" alt="Alumbrado">
           <div class="p-3">Alumbrado</div>
         </div>
         <div class="col">
-          <img src="./Assets/Img/Servicios/bar.png" class="ImgTamaño" alt="Bar">
+          <img src="../Assets/Img/Servicios/bar.png" class="ImgTamaño" alt="Bar">
           <div class="p-3">Bar</div>
         </div>
         <div class="col">
-          <img src="./Assets/Img/Servicios/boxes.png" class="ImgTamaño" alt="Boxes">
+          <img src="../Assets/Img/Servicios/boxes.png" class="ImgTamaño" alt="Boxes">
           <div class="p-3">Boxes</div>
         </div>
         <div class="col">
-          <img src="./Assets/Img/Servicios/cronometraje.png" class="ImgTamaño" alt="Cronometraje">
+          <img src="../Assets/Img/Servicios/cronometraje.png" class="ImgTamaño" alt="Cronometraje">
           <div class="p-3">Cronometraje</div>
         </div>
         <div class="col">
-          <img src="./Assets/Img/Servicios/duchas.png" class="ImgTamaño" alt="Duchas">
+          <img src="../Assets/Img/Servicios/duchas.png" class="ImgTamaño" alt="Duchas">
           <div class="p-3">Duchas</div>
         </div>
         <div class="col">
-          <img src="./Assets/Img/Servicios/instruccion.png" class="ImgTamaño" alt="Instrucción">
+          <img src="../Assets/Img/Servicios/instruccion.png" class="ImgTamaño" alt="Instrucción">
           <div class="p-3">Instrucción</div>
         </div>
         <div class="col">
-          <img src="./Assets/Img/Servicios/parrilla de largada.png" class="ImgTamaño" alt="Parrilla de Largada">
+          <img src="../Assets/Img/Servicios/parrilla de largada.png" class="ImgTamaño" alt="Parrilla de Largada">
           <div class="p-3">Parrilla de Largada</div>
         </div>
         <div class="col">
-          <img src="./Assets/Img/Servicios/reparacioncontinua.png" class="ImgTamaño" alt="Reparación">
+          <img src="../Assets/Img/Servicios/reparacioncontinua.png" class="ImgTamaño" alt="Reparación">
           <div class="p-3">Reparación Continua</div>
         </div>
         <div class="col">
-          <img src="./Assets/Img/Servicios/riego.png" class="ImgTamaño" alt="Riego">
+          <img src="../Assets/Img/Servicios/riego.png" class="ImgTamaño" alt="Riego">
           <div class="p-3">Riego</div>
         </div>
       </div>
@@ -274,7 +272,7 @@
   <section>
     <h2 class="text-center mt-4 mb-4">Auspiciantes</h2>
     <div class="text-center">
-      <img src="./Assets/Img/auspiciantes.jpg" alt="Auspiciantes">
+      <img src="../Assets/Img/auspiciantes.jpg" alt="Auspiciantes">
     </div>
 
   </section>
