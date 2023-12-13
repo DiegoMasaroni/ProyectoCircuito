@@ -120,7 +120,7 @@
                 </div>
                 <br>
                 <div class="d-grid col-3 mb-2 mx-auto">
-                       <button class="btn btn-success" type="button" id="btnCosto" onclick="location.href='CalcularCosto.jsp'">Calcular Costo</button>
+                       <button class="btn btn-success" type="button" id="btnCosto">Calcular Costo</button>
                 </div>
 <%
 int x =Integer.parseInt(request.getParameter("cantidad"));

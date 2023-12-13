@@ -16,7 +16,6 @@ out.println(capCantidad);
 
     const TICKET = 3500;
     var resumenTotal = 1000;
-console.log(capCategoria.chart(0))
 
     switch (capCategoria.chart(0)) {
         case '1':
@@ -33,10 +32,10 @@ console.log(capCategoria.chart(0))
   //var miSpan = document.getElementById("total");
   //miSpan.innerText =1000;//resumenTotal;
   
-    document.getElementById('total').value = resumenTotal;
+    document.getElementById('total').innerHTML = resumenTotal;
   
 }
 
-//const COSTO = document.getElementById('btnCosto');
+const COSTO = document.getElementById('btnCosto');
 
-//COSTO.addEventListener('click', valorEntrada);
+COSTO.addEventListener('click', valorEntrada);

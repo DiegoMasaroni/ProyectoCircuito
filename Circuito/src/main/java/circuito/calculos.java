@@ -2,7 +2,7 @@ package circuito;
 
 public class calculos {
     double valorticket=3500;
-    
+
  // Definir una función que toma dos parámetros enteros y devuelve un valor decimal
     public double calcular(int cant, char cat) {
     	
