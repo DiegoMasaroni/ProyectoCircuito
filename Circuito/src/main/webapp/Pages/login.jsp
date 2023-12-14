@@ -36,7 +36,7 @@ while(tablaResultado.next()){
 		%>
 		<jsp:include page="estadia.html"></jsp:include>
 <%	 }else{%>
-	     <jsp:include page="estadia.html"></jsp:include>
+	     <jsp:include page="../index.html"></jsp:include>
 	 <%}
 
  }
