@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-11-2023 a las 22:43:12
+-- Tiempo de generación: 14-12-2023 a las 13:59:22
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.5
 
@@ -33,9 +33,21 @@ CREATE TABLE `cupones` (
   `apellido` varchar(40) NOT NULL,
   `mail` varchar(60) NOT NULL,
   `cantidad` tinyint(1) NOT NULL,
-  `FK_tipoEstadia` tinyint(1) NOT NULL,
-  `totalPagar` decimal(12,0) NOT NULL
+  `tipoEstadia` varchar(60) NOT NULL,
+  `totalPagar` decimal(12,2) NOT NULL,
+  `activo` int(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `cupones`
+--
+
+INSERT INTO `cupones` (`PK_nroCupon`, `nombre`, `apellido`, `mail`, `cantidad`, `tipoEstadia`, `totalPagar`, `activo`) VALUES
+(112, 'ss', 'ss', 'diegoelcarlos@gmail.com', 2, '2-Viernes, Sábados o Domingo (Sin descuento)', '7000.00', 1),
+(113, 'ss', 'ss', 'diegoelcarlos@gmail.com', 2, '3-Vie y S�b o S�b y Dom (20%)', '11200.00', 1),
+(114, 'xx', 'xx', 'diegomasaroni@gmail.com', 1, '1-Lunes a Jueves (50%)', '1750.00', 1),
+(115, 'dd', 'dd', 'diegoelcarlos@gmail.com', 1, '1-Lunes a Jueves (50%)', '1750.00', 1),
+(116, 'gg', 'gg', 'diegoelcarlos@gmail.com', 1, '2-Viernes, S�bados o Domingo (Sin descuento%)', '3500.00', 0);
 
 -- --------------------------------------------------------
 
@@ -54,8 +66,9 @@ CREATE TABLE `tiposestadia` (
 --
 
 INSERT INTO `tiposestadia` (`PK_tipoEstadia`, `porcentDescuento`, `detalle`) VALUES
-(1, '10', 'el 10 % de descuento'),
-(2, '25', 'el 25 % de descuento');
+(1, '50', 'el 50 % de descuento'),
+(2, '0', 'Sin descuento'),
+(3, '20', '20 % de descuento');
 
 --
 -- Índices para tablas volcadas
@@ -65,8 +78,7 @@ INSERT INTO `tiposestadia` (`PK_tipoEstadia`, `porcentDescuento`, `detalle`) VAL
 -- Indices de la tabla `cupones`
 --
 ALTER TABLE `cupones`
-  ADD PRIMARY KEY (`PK_nroCupon`),
-  ADD KEY `tipoEstadia` (`FK_tipoEstadia`);
+  ADD PRIMARY KEY (`PK_nroCupon`);
 
 --
 -- Indices de la tabla `tiposestadia`
@@ -82,23 +94,13 @@ ALTER TABLE `tiposestadia`
 -- AUTO_INCREMENT de la tabla `cupones`
 --
 ALTER TABLE `cupones`
-  MODIFY `PK_nroCupon` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `PK_nroCupon` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
 
 --
 -- AUTO_INCREMENT de la tabla `tiposestadia`
 --
 ALTER TABLE `tiposestadia`
-  MODIFY `PK_tipoEstadia` tinyint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `cupones`
---
-ALTER TABLE `cupones`
-  ADD CONSTRAINT `tipoEstadia` FOREIGN KEY (`FK_tipoEstadia`) REFERENCES `tiposestadia` (`PK_tipoEstadia`);
+  MODIFY `PK_tipoEstadia` tinyint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
