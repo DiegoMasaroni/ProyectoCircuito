@@ -160,7 +160,7 @@ String totalapagar = Double.toString(resultado);
         <br>
 
     </main>
-    <footer class="bg-secondary mt-5">
+ <!-- 	   <footer class="bg-secondary mt-5">
         <nav class="navbar  navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -183,7 +183,7 @@ String totalapagar = Double.toString(resultado);
                 </div>
             </div>
         </nav>
-    </footer>
+    </footer>-->
 
     <!-- JavaScript Libraries -->
     <!--<script src="./JS/script.js"></script>-->

@@ -14,6 +14,8 @@
 
 String usuarioIngresado = request.getParameter("usuario");
 String contrasenaIngresada = request.getParameter("contrasena");
+//out.println(usuarioIngresado);
+//out.println(contrasenaIngresada);
 
 conexion c = new conexion();
 Connection cn = c.conectar();
@@ -21,12 +23,21 @@ Connection cn = c.conectar();
 try{
 	
 Statement stm = cn.createStatement();
-ResultSet tablaResultado= stm.executeQuery("SELECT usuario, contraseña FROM usuarios");   
+ResultSet tablaResultado= stm.executeQuery("SELECT usuario, contrasenia FROM usuarios"); 
+//out.println(tablaResultado);
 while(tablaResultado.next()){
-	 if (usuarioIngresado== tablaResultado.getString(1) && contrasenaIngresada == tablaResultado.getString(2)){
-		 <%@ include file="estadia.html" %>
-		 
-	 }
+	//out.println(usuarioIngresado); 
+//	out.println(tablaResultado.getString(1));
+	//out.println(contrasenaIngresada); 
+	//out.println(tablaResultado.getString(2)); 
+	 
+	 
+	 if ( usuarioIngresado.equals(tablaResultado.getString(1)) && contrasenaIngresada.equals(tablaResultado.getString(2))) {
+		%>
+		<jsp:include page="estadia.html"></jsp:include>
+<%	 }else{%>
+	     <jsp:include page="estadia.html"></jsp:include>
+	 <%}
 
  }
 } catch(Exception e){
