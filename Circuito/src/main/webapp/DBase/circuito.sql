@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-12-2023 a las 13:59:22
+-- Tiempo de generación: 14-12-2023 a las 14:06:01
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.5
 
@@ -70,6 +70,25 @@ INSERT INTO `tiposestadia` (`PK_tipoEstadia`, `porcentDescuento`, `detalle`) VAL
 (2, '0', 'Sin descuento'),
 (3, '20', '20 % de descuento');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `usuario` varchar(60) NOT NULL,
+  `contrasenia` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `usuario`, `contrasenia`) VALUES
+(1, 'diego', 'diego123');
+
 --
 -- Índices para tablas volcadas
 --
@@ -87,6 +106,13 @@ ALTER TABLE `tiposestadia`
   ADD PRIMARY KEY (`PK_tipoEstadia`);
 
 --
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `usuario` (`usuario`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -101,6 +127,12 @@ ALTER TABLE `cupones`
 --
 ALTER TABLE `tiposestadia`
   MODIFY `PK_tipoEstadia` tinyint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
